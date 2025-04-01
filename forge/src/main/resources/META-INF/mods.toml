@@ -1,0 +1,29 @@
+modLoader = "javafml"
+loaderVersion = "[47,)"
+#issueTrackerURL = ""
+license = "MIT"
+
+
+[[mods]]
+modId = "resourcecontrol"
+version = "${version}"
+displayName = "Resource Control"
+authors = "Blockninja124"
+description = '''
+Allows the controlling of resource packs through commands
+'''
+
+[[dependencies.resourcecontrol]]
+modId = "forge"
+mandatory = true
+versionRange = "[47,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.resourcecontrol]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.20.1,)"
+ordering = "NONE"
+side = "BOTH"
+

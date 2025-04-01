@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "resourcecontrol",
+  "version": "${version}",
+  "name": "Resource Control",
+  "description": "Allows the controlling of resource packs through commands",
+  "authors": [
+    "Blockninja124"
+  ],
+  "contact": {
+    "homepage": ""
+  },
+  "license": "MIT",
+  "icon": "assets/resourcecontrol/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.blockninja.resourcecontrol.fabric.ResourceControlFabric"
+    ],
+    "client": [
+      "com.blockninja.resourcecontrol.fabric.client.ResourceControlFabricClient"
+    ]
+  },
+  "mixins": [
+    "resourcecontrol.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.10",
+    "minecraft": "~1.20.1",
+    "java": ">=17",
+    "fabric-api": "*"
+  }
+}
